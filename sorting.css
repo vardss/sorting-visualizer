@@ -1,0 +1,64 @@
+body{
+    background-color: #000000;
+}
+
+h1{
+    color: aqua;
+    text-align: center;
+}
+
+button{
+    border-style: double;
+    font-size: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 4px 6px 4px 6px;
+}
+
+button:hover{
+    background-color: #BC6FF1;
+}
+
+#newarr{
+    margin-right: 20px;
+}
+
+#bubble,#selection,#insertion,#merge,#quick,#sizer,#speed{
+    margin-right: 20px;
+}
+
+#bar{
+    color: red;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    flex-direction: row;
+    padding: 20px 30px 0px 10px;
+}
+  
+.baritem {
+    background:#BC6FF1;
+    border: 1.25px solid blue;
+    width: 0.75%;
+  }
+
+a{
+    text-decoration: none;
+    color: #892CDC;
+}
+
+a:hover{
+    color: #D6C5F0;
+}
+
+#theory
+{   height: 100px;
+  
+    text-align: center;
+}
+
+#theo
+{
+    color: aliceblue;
+    font-size: larger;
+}
