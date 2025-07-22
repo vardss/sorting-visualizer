@@ -3,7 +3,7 @@
  This project is a web-based Sorting Visualizer that visually demonstrates how different sorting algorithms—like Bubble Sort, Merge Sort,and Quick Sort—operate step by step using animated bars. It's designed to help users understand the logic and efficiency of each algorithm through an interactive interface
 
 # Site Link
-https://vardhitha-sorting-visualizer.netlify.app/
+https://vard-sort.netlify.app/
 # Features Added
 ✅ Control Visualization Speed
 
@@ -32,3 +32,4 @@ https://vardhitha-sorting-visualizer.netlify.app/
 ✅ CSS
 
 ✅ Vanilla JavaScript
+
