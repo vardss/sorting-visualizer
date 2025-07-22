@@ -8,14 +8,14 @@ async function merge(ele,low,mid,high){
     for(let i=0; i<n1; i++)
     {
         await delay(time);
-        ele[low+i].style.background='#EBD3F8';
+        ele[low+i].style.background='#EBD3F8';//lavender
         left[i]=ele[low+i].style.height;
     }
 
     for(let j=0; j<n2; j++)
     {
         await delay(time);
-        ele[mid+1+j].style.background='#892CDC';
+        ele[mid+1+j].style.background='#892CDC';//purple
         right[j]=ele[mid+1+j].style.height;
     }
 
@@ -27,14 +27,14 @@ async function merge(ele,low,mid,high){
         await delay(time);
         if(parseInt(left[i])<=parseInt(right[j]))
         {
-            if((n1+n2)==ele.length)
-            {
-                ele[k].style.background='#52057B';
-            }
-            else
-            {
-                ele[k].style.background='light green';
-            }
+           // if((n1+n2)==ele.length)
+            //{
+                ele[k].style.background='#52057B';//final
+            //}
+           // else
+           // {
+                ele[k].style.background='SpringGreen';
+           // }
             ele[k].style.height=left[i];
             i++;
             k++;
@@ -42,15 +42,15 @@ async function merge(ele,low,mid,high){
 
         else
         {
-            if((n1+n2)==ele.length)
-            {
-                ele[k].style.background='#52057B';
-            }
+           // if((n1+n2)==ele.length)
+            //{
+                ele[k].style.background='#52057B';//final
+            //}
 
-            else
-            {
-                ele[k].style.background='light green';
-            }
+           //else
+            //{
+                ele[k].style.background='SpringGreen';
+           // }
             ele[k].style.height=right[j];
             j++;
             k++;
@@ -59,16 +59,16 @@ async function merge(ele,low,mid,high){
 
     while(i<n1)
     {
-        await delay(time);
-        if((n1+n2)==ele.length)
-        {
-            ele[k].style.background='#52057B';
-        }
+       // await delay(time);
+        //if((n1+n2)==ele.length)
+        //{
+            ele[k].style.background='#52057B';//final
+       // }
 
-        else
-        {
-            ele[k].style.background='light green';
-        }
+       // else
+        //{
+            ele[k].style.background='SpringGreen';
+       // }
         ele[k].style.height=left[i];
         i++;
         k++;
@@ -77,15 +77,15 @@ async function merge(ele,low,mid,high){
     while(j<n2)
     {
         await delay(time);
-        if((n1+n2)==ele.length)
-        {
-            ele[k].style.background='#52057B';
-        }
+       // if((n1+n2)==ele.length)
+        //{
+          //  ele[k].style.background='#52057B';//final
+        //}
 
-        else
-        {
-            ele[k].style.background='light green';
-        }
+        //else
+        //{
+            ele[k].style.background='SpringGreen';
+        //}
         ele[k].style.height=right[j];
         j++;
         k++;
@@ -107,7 +107,7 @@ document.getElementById('merge').addEventListener('click',async function(){
     let ele=document.querySelectorAll('.sort');
     let l=0;
     let r=parseInt(ele.length)-1;
-    document.getElementById("theo").innerHTML = "Merge sort has a time complexity of O(n log n) in all cases (best, average, and worst). It is a stable sorting algorithm but not in-place, with a space complexity of O(n).";
+    document.getElementById("explanation").innerHTML = "Merge sort has a time complexity of O(n log n) in all cases (best, average, and worst). It is a stable sorting algorithm but not in-place, with a space complexity of O(n).";
 
     disableSizeSlider();
     disableSortingBtn();
