@@ -37,9 +37,9 @@ button:hover{
 }
   
 .baritem {
-    background:#BC6FF1;
-    border: 1.25px solid blue;
-    width: 0.75%;
+    background:slateblue;
+    border: 1.25px solid white;
+    width: 0.95%;
   }
 
 a{
@@ -57,7 +57,7 @@ a:hover{
     text-align: center;
 }
 
-#theo
+#explanation
 {
     color: aliceblue;
     font-size: larger;
