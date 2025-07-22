@@ -37,7 +37,7 @@ for(let x=0; x<noBar; x++)
 }
 
 document.getElementById("newarr").addEventListener("click",function(){
-    document.getElementById("theo").innerHTML = "Sorting is the process of arranging elements of a list or array in a specific order, typically in ascending or descending order. It helps in efficient data searching, organization, and analysis.Here we can observe how sorting algorithms like quick,bubble,merge,selection and insertion work";
+    document.getElementById("explanation").innerHTML = "Sorting is the process of arranging elements of a list or array in a specific order, typically in ascending or descending order. It helps in efficient data searching, organization, and analysis.Here we can observe how sorting algorithms like quick,bubble,merge,selection and insertion work";
     generateBars(arrsizer.value);
     enableSortingBtn();
     enableSizeSlider();
