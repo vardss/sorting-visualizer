@@ -8,9 +8,9 @@ async function bubble() {
             ele[j].style.background = 'red';
             ele[j + 1].style.background = 'red';
 
-            // Use getComputedStyle to get numeric height (e.g., "100px" -> 100)
-            let height1 = parseInt(window.getComputedStyle(ele[j]).height);
-            let height2 = parseInt(window.getComputedStyle(ele[j + 1]).height);
+            
+            let height1 = parseInt(ele[j].style.height);
+            let height2 = parseInt(ele[j + 1].style.height);
 
             if (height1 > height2) {
                 cnt++;
